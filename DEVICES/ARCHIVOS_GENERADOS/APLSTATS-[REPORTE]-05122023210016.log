@@ -1,0 +1,10 @@
+date: 05122023210016
+mission: TMRS
+device_type: naves
+device_status: good
+hash: 05122023210016_TMRS_naves_good
+date: 05122023210016
+mission: ORBONE
+device_type: vehiculos
+device_status: killed
+hash: 05122023210016_ORBONE_vehiculos_killed

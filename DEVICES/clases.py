@@ -6,7 +6,6 @@ class Mision:
         self.mission = random.choice(["ORBONE","CLNM","TMRS","GALXONE","UNKN"])
         
 mission = Mision()
-print(mission.mission)
 
 class Dispositivos:
     # CONSTRUCTOR DE LA CLASE ESTADO INICIAL
