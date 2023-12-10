@@ -1,4 +1,4 @@
-# import schedule
+import schedule
 from clases import Dispositivos, Mision
 from funciones import fecha_solicitada,status
 import logging
@@ -16,10 +16,10 @@ class Apolo_11:
         return f"{self.date}_{self.mission}_{self.device_type}_{self.device_status}"
 
 # EJECUCIÓN DE LA CLASE Y LAS INSTANCIAS IMPORTADAS
-# def ejecutar_apolo_11():
-dispositivos_instancia = Dispositivos()
-mision_instancia = Mision()
-apolo_11 = Apolo_11(mision_instancia,dispositivos_instancia)
+def ejecutar_apolo_11():
+    dispositivos_instancia = Dispositivos()
+    mision_instancia = Mision()
+    apolo_11 = Apolo_11(mision_instancia,dispositivos_instancia)
 
 # FUNCIONALIDAD DE LOGGIN PARA LA CREACIÓN DE LOS ARCHIVOS EN LA CARPETA ARCHIVOS GENERADOS
 current_time = fecha_solicitada()
@@ -40,8 +40,8 @@ logging.info("hash: %s", apolo_11.hash())
 
 
 # PROGRAMACIÓN DE LA EJECUCICIÓN CADA 20 SEGUNDOS
-# schedule.every(20).seconds.do(ejecutar_apolo_11)
+schedule.every(20).seconds.do(ejecutar_apolo_11)
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+while True:
+    schedule.run_pending()
+    time.sleep(1)

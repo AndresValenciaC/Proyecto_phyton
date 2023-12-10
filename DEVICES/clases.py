@@ -7,6 +7,7 @@ class Mision:
         
 mission = Mision()
 
+
 class Dispositivos:
     # CONSTRUCTOR DE LA CLASE ESTADO INICIAL
     def __init__(self):
