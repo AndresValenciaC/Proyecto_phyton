@@ -1,0 +1,5 @@
+Date: 14122023172740
+Mission: OrbitOne
+Device Type: Satellite
+Device Status: good
+Hash: 14122023172740_OrbitOne_Satellite_good

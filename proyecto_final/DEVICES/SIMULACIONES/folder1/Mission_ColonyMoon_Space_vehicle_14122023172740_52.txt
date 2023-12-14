@@ -1,0 +1,5 @@
+Date: 14122023172740
+Mission: ColonyMoon
+Device Type: Space_vehicle
+Device Status: warning
+Hash: 14122023172740_ColonyMoon_Space_vehicle_warning

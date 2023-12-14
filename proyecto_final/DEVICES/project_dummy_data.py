@@ -1,3 +1,5 @@
+from datetime import datetime
+
 project_missions = [
         {"id": 1, "name": "OrbitOne", "components": ["Satellite", "Space_Suit","Space_food"]},
         {"id": 2, "name": "ColonyMoon", "components": ["Satellite", "Space_vehicle","Space_rockets"]},
@@ -15,3 +17,10 @@ project_devices = [
     ]
 
 devices_status = ["excellent", "good", "warning", "faulty", "killed"]
+
+def hash_format(date, mission_name, device_type, device_status):
+       return date+"_"+mission_name+"_"+device_type+"_"+device_status
+
+def date_format():
+     now = datetime.now()
+     return now.strftime('%d%m%Y%H%M%S')
