@@ -1,5 +1,0 @@
-Date: 14122023172740
-Mission: GalaxyTwo
-Device Type: Space_food
-Device Status: good
-Hash: 14122023172740_GalaxyTwo_Space_food_good

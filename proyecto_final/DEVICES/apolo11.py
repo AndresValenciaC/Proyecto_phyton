@@ -1,6 +1,6 @@
-import datetime
 import os
 import random
+import schedule
 
 from project_dummy_data import project_missions,devices_status,hash_format,date_format
 
@@ -8,9 +8,13 @@ class Apolo11:
 
    mission_list = project_missions
 
-
    def generate_mission_files(missions,num_files):
-     output_directory = "SIMULACIONES/folder1"
+     increment = lambda x: x + 1
+     increment.counter = 0
+     increment.counter += 1
+
+     output_directory = f"SIMULACIONES/folder-{increment.counter}"
+
 
      if not os.path.exists(output_directory):
         os.makedirs(output_directory)
@@ -21,7 +25,7 @@ class Apolo11:
          name = mission["name"]
          components = mission["components"]
 
-         status_components = {component : random.choice(['good', 'excellent', 'faulty', 'warning']) for component in components}
+         status_components = {component : random.choice(devices_status) for component in components}
 
          component_data = [{"mission": name, "component": component, "status": status} for component, status in status_components.items()]
          all_files_data.extend(component_data)
@@ -45,7 +49,10 @@ class Apolo11:
             file.write("Hash: " + hash_m + "\n")
 
 
-   generate_mission_files(mission_list,7)
+
+
+
+
 
 
 

@@ -1,5 +1,0 @@
-Date: 14122023172740
-Mission: VacMars
-Device Type: Space_vehicle
-Device Status: good
-Hash: 14122023172740_VacMars_Space_vehicle_good
